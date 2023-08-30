@@ -1,0 +1,39 @@
+/* The Magic
+.accordion:hover .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+    height: 2em;
+}
+
+.accordion-item-content,
+.accordion:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height .25s;
+}
+
+
+.accordion {
+    position: sticky;
+  
+}
+
+#bg-div{
+    background-image: url("./images/Barbie-Web-Banner.jpg");
+    height: 817px;
+} */
+
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.collapse:hover + .menu-container {
+    display: block;
+}
